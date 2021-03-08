@@ -1,6 +1,7 @@
 # food_delivery_app_ui
 
 food_delivery_app_UI by flutter
+![](preview.png)
 
 ## Getting Started
 
