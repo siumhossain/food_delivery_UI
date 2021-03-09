@@ -6,7 +6,7 @@ food_delivery_app_UI by flutter
 Inspired_By [click_here_for_original_design](https://www.uplabs.com/posts/happy-meals-food-delivery-app)
 <br>
 ## MockUp
-![](preview.png)
+![](threed_mockup.png)
 ![](1.gif)
 ## Getting Started
 
