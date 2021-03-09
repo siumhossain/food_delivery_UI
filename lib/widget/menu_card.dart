@@ -64,11 +64,7 @@ class MenuCard extends StatelessWidget {
               top: 80,
               child: Text(
                 '\$ $price',
-                style: TextStyle(
-                  color: kPrimaryColor,
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: kMoney,
               ),
             ),
             Positioned(
@@ -81,21 +77,14 @@ class MenuCard extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       title,
-                      style: TextStyle(
-                        letterSpacing: 1.2,
-                        fontWeight: FontWeight.w900,
-                        fontSize: 22,
-                      ),
+                      style: kHeadLine,
                     ),
                     SizedBox(
                       height: 5.9,
                     ),
                     Text(
                       materials,
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 16,
-                      ),
+                      style: kRecipe,
                     ),
                     SizedBox(
                       height: 30,
@@ -103,18 +92,12 @@ class MenuCard extends StatelessWidget {
                     Text(
                        description,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 16,
-                      ),
+                      style: kDescription,
                     ),
                     SizedBox(height: 30.0,),
                     Text(
                       'KCal $kcal',
-                      style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
-                      ),
+                      style: kKcal,
                     ),
                   ],
                 ),

@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_delivery_app_ui/constant/const.dart';
 import 'package:food_delivery_app_ui/widget/item_list.dart';
 import 'package:food_delivery_app_ui/widget/menu_card.dart';
+import 'package:food_delivery_app_ui/screen/details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -87,6 +88,14 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 children: <Widget>[
                   MenuCard(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => DetailScreen(),
+                        ),
+                      );
+                    },
                     image: 'assets/images/image_1.png',
                     price: '30',
                     title: 'Vegan salad bowl',
@@ -101,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: 'Vegan salad bowl',
                     materials: 'With red tomato',
                     description:
-                    'Contrary to popular belief, \nLorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
+                        'Contrary to popular belief, \nLorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
                     kcal: '240',
                   ),
                   MenuCard(
@@ -110,7 +119,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     title: 'Vegan salad bowl',
                     materials: 'With red tomato',
                     description:
-                    'Contrary to popular belief, \nLorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
+                        'Contrary to popular belief, \nLorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. ',
                     kcal: '240',
                   ),
                 ],
